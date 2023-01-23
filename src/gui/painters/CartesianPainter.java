@@ -6,7 +6,7 @@ import gui.convertion.Converter;
 import java.awt.*;
 
 /**
- * Рисовальщик декартовой плоскости
+ * Художник декартовой плоскости
  * */
 public class CartesianPainter extends Painter{
     public CartesianPainter(CartScreenPlane plane) {

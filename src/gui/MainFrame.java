@@ -30,7 +30,7 @@ public class MainFrame extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
         setMinimumSize(minFrameSize);
-        setTitle("Экзамен Инна Иванова");
+        setTitle("Exzamen");
 
         setupLayoutAndPack();
         plane = getNewCartScreenPlane(graphicsPanel.getWidth(), graphicsPanel.getHeight());

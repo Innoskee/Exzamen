@@ -5,7 +5,7 @@ import gui.convertion.CartScreenPlane;
 import java.awt.*;
 
 /**
- * Класс родительского рисовальщика
+ * Класс родительского художника
  * */
 public abstract class Painter {
     // модификатор доступа protected для прямого доступа к полю производным классам
@@ -17,7 +17,7 @@ public abstract class Painter {
 
     /**
      * Рисование относительно заданного графического контекста
-     * @param graphics графический контекст
+     * graphics графический контекст
      * */
     public abstract void paint(Graphics graphics);
 }

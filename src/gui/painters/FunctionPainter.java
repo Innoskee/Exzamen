@@ -9,7 +9,7 @@ import gui.convertion.Converter;
 import java.awt.*;
 
 /**
- * Рисовальщик функции
+ * Художник функции
  * */
 public class FunctionPainter extends Painter{
     private boolean _isEnabled = true;
