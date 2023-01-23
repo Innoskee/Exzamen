@@ -32,7 +32,7 @@ public class ControlPanel extends JPanel {
         setBackground(Color.GRAY.brighter());
         setBorder(new EtchedBorder());
         handleSpinnersEvent(); // обработка события на спиннерах
-        setupLayout(); // установка layout'a для данной панели (ControlPanel)
+        setupLayout(); // установка layout для данной панели (ControlPanel)
     }
 
     /**

@@ -8,7 +8,7 @@ import java.awt.*;
 import java.util.ArrayList;
 
 /**
- * Панель, содержащий в себе рисунки добавленных рисовальщиков
+ * Панель, содержащий в себе рисунки добавленных художников
  * */
 public class GraphicsPanel extends JPanel {
     // список рисовальщиков
@@ -20,7 +20,7 @@ public class GraphicsPanel extends JPanel {
     }
 
     /**
-     * Добавление рисовальщика
+     * Добавление художника
      * @param p добавляемый рисовальщик
      * */
     public void addPainter(Painter p){

@@ -44,7 +44,7 @@ public class MainFrame extends JFrame {
         repaint();
     }
 
-    // установка layout'a и упаковка компонент
+    // установка layout  и упаковка компонент
     private void setupLayoutAndPack(){
         GroupLayout gl = new GroupLayout(getContentPane());
         gl.setVerticalGroup(gl.createSequentialGroup()
@@ -151,7 +151,7 @@ public class MainFrame extends JFrame {
         plane.setYMax(yMax);
     }
 
-    // инициализация рисовальщиков и их последующее добавление в GraphicsPanel
+    // инициализация художников и их последующее добавление в GraphicsPanel
     private void initializeAndAddPainters(){
         graphicsPanel.addPainter(
                 new CartesianPainter(plane)
