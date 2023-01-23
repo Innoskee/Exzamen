@@ -12,6 +12,8 @@ import java.awt.*;
  * Рисовальщик функции
  * */
 public class FunctionPainter extends Painter{
+    private boolean _isEnabled = true;
+    private Color _lineColor = Color.RED;
 
     private Function _targetFunction; // функция, которую необходимо нарисовать
 
@@ -27,15 +29,26 @@ public class FunctionPainter extends Painter{
         return this;
     }
 
+    public void setEnabled(boolean state){
+        _isEnabled = state;
+    }
+
+    public FunctionPainter setColor(Color c){
+        _lineColor = c;
+        return this;
+    }
+
     @Override
     public void paint(Graphics graphics) {
-        var step = 0.001; // шаг сдвига точки
-        drawTargetFunction(graphics, step); // рисование функции
+        if(_isEnabled){
+            var step = 0.001; // шаг сдвига точки
+            drawTargetFunction(graphics, step); // рисование функции
+        }
     }
 
     // рисование функции
     private void drawTargetFunction(Graphics graphics, double step){
-        var chartColor = Color.RED; // цвет линии графика
+        var chartColor = _lineColor; // цвет линии графика
         if(graphics == null){
             return;
         }
@@ -43,10 +56,10 @@ public class FunctionPainter extends Painter{
             return;
         }
         graphics.setColor(chartColor);
-        if(_targetFunction instanceof ExplicitFunction){ // проверка является тип функции _targetFunction типом ExplicitFunction
+        if(_targetFunction instanceof ExplicitFunction){ // проверка является тип функции _targetFunction типом ExplicitFunction (явной функции)
             drawExplicitFunction((ExplicitFunction) _targetFunction, graphics, step); // используем метод рисования явной функции
         }
-        else if(_targetFunction instanceof ParametricFunction){ // проверка является тип функции _targetFunction типом ParametricFunction
+        else if(_targetFunction instanceof ParametricFunction){ // проверка является тип функции _targetFunction типом ParametricFunction (параметрической функции)
             drawParametricFunction((ParametricFunction) _targetFunction, graphics, step); // используем метод рисования параметрической функции
         }
     }

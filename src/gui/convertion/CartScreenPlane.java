@@ -16,8 +16,8 @@ public class CartScreenPlane {
     private double yMax;
 
     /**
-     * @param realWidth ширина экрана
-     * @param realHeight высота экрана
+      realWidth ширина экрана
+      realHeight высота экрана
      * */
     public CartScreenPlane(int realWidth, int realHeight,
                         double xMin, double xMax, double yMin, double yMax) {

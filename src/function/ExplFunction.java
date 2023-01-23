@@ -4,6 +4,6 @@ package function;
 public class ExplFunction implements ExplicitFunction {
     @Override
     public double getY(double x) {
-        return 3 * x - x * x;
+        return 3 * x - x * x * x;
     }
 }
