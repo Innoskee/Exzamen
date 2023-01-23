@@ -83,7 +83,7 @@ public class FunctionPainter extends Painter{
 
     // рисование параметрической функции
     private void drawParametricFunction(ParametricFunction function, Graphics graphics, double step){
-        // Пусть t лежит на отрезке [0; 10], т.к. в условиях задания нет никаких уточнений по этому поводу
+
         double t = 0.0; // точка t, которая будет двигаться по отрезку [0; 10] с шагом step
         double maxT = 10.0; // максимальное значение точки t
         while(t < maxT){
