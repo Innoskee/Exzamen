@@ -21,15 +21,14 @@ public class GraphicsPanel extends JPanel {
 
     /**
      * Добавление художника
-     * @param p добавляемый рисовальщик
+     * @param p добавляемый художник
      * */
     public void addPainter(Painter p){
         painters.add(p);
     }
     /**
      * Удаление рисовальщика
-     * @param p удаляемый рисовальщик
-     * */
+     * @param p удаляемый художник
     public void removePainter(Painter p){
         painters.remove(p);
     }
